@@ -21,9 +21,9 @@ const Main = () => {
           {/* Row 1: List of Projects and List of Contributors */}
           <div className="row">
             <div className="input-group">
-              <label>
-                List of Projects <span style={{ color: "red" }}>*</span>
-              </label>
+              <div className="label">
+              List of Projects <span style={{ color: "red" }}>*</span>
+              </div>
               <FormControl fullWidth>
                 <InputLabel>Options</InputLabel>
                 <Select value="" onChange={() => {}}>
@@ -34,9 +34,9 @@ const Main = () => {
               </FormControl>
             </div>
             <div className="input-group">
-              <label>
-                List of Contributors <span style={{ color: "red" }}>*</span>
-              </label>
+              <div className="label">
+              List of Contributors <span style={{ color: "red" }}>*</span>
+              </div>
               <FormControl fullWidth>
                 <InputLabel>Options</InputLabel>
                 <Select value="" onChange={() => {}}>
@@ -51,9 +51,10 @@ const Main = () => {
           {/* Row 2: From and To */}
           <div className="row">
             <div className="input-group">
-              <label>
-                From <span style={{ color: "red" }}>*</span>
-              </label>
+              <div className="label">
+              From <span style={{ color: "red" }}>*</span>
+              </div>
+              
               <LocalizationProvider dateAdapter={AdapterDayjs}>
                 <DesktopDatePicker
                   label="Pick a Date"
@@ -64,9 +65,10 @@ const Main = () => {
               </LocalizationProvider>
             </div>
             <div className="input-group">
-              <label>
-                To <span style={{ color: "red" }}>*</span>
-              </label>
+              <div className="label">
+              To <span style={{ color: "red" }}>*</span>
+              </div>
+             
               <LocalizationProvider dateAdapter={AdapterDayjs}>
                 <DesktopDatePicker
                   label="Pick a Date"
